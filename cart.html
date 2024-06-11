@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart - TV Shopping</title>
+</head>
+<body>
+    <header>
+        <h1>Your Shopping Cart</h1>
+        <nav>
+            <a href="index.html">Home</a> |
+            <a href="about.html">About Us</a> |
+            <a href="cart.html">Cart</a>
+        </nav>
+    </header>
+
+    <section id="cart">
+        <h2>Items in Your Cart</h2>
+        <table border="1" width="100%">
+            <tr>
+                <th>Product</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Total</th>
+                <th>Action</th>
+            </tr>
+            <tr>
+                <td>42" Smart TV with 4K resolution</td>
+                <td>$400.00</td>
+                <td><input type="number" value="1"></td>
+                <td>$400.00</td>
+                <td><button>Remove</button></td>
+            </tr>
+            <tr>
+                <td>55" Smart TV with HDR</td>
+                <td>$600.00</td>
+                <td><input type="number" value="1"></td>
+                <td>$600.00</td>
+                <td><button>Remove</button></td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="checkout">
+        <h2>Checkout</h2>
+        <form action="submit_order.html" method="post">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name"><br><br>
+            <label for="address">Address:</label><br>
+            <input type="text" id="address" name="address"><br><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"><br><br>
+            <button type="submit">Place Order</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 TV Shopping</p>
+    </footer>
+</body>
+</html>
